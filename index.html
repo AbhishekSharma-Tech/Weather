@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashbaord</title>
+  </head>
+  <body>
+    <div class="split info">
+      <div class="centered">
+        <h2 id="city" cityName></h2>
+        <h6 date-time></h6>
+        <div id="temperature" cityTemperature></div>
+        <img src="" id="image" />
+        <p id="cityWeather" cityWeather></p>
+        <div id="weatherInfo">
+          <div id="feeling" tempFeeling></div>
+          <div id="humidity" humidity></div>
+          <div id="wind" wind></div>
+        </div>
+      </div>
+    </div>
+    <div class="split input">
+      <div class="centered">
+        <div id="form-container">
+          <h1>Current Weather</h1>
+          <h5>Search location</h5>
+          <button class="location-button" location-button><i class="material-icons">location_on</i></button>
+            <form container-form>
+              <input
+                type="text"
+                placeholder="City or Zip Code.."
+                id="search"
+                new-entry
+                required
+              />
+            </form>
+    
+          <label class="switch">
+            <input type="checkbox" switch />
+            <span class="slider round">
+              <div>
+                <span>C</span>
+                <span>F</span>
+              </div>
+            </span>
+          </label>
+          
+        </div>
+        <span>Switch between Celsius/Fahrenheit</span>        
+      </div>      
+      <div>      
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
